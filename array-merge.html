@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge</title>
+
+    <script>
+        let data1 = [3, 7, 12, 34, 56, 90]
+        let data2 = [20, 30, 40, 50, 100, 200]
+        let data3 = []
+
+
+        for (i = 0; i < data1.length; i++) {
+            // data3.push(data1[i])
+                                                                                                    [i] = data1[i]
+        }
+
+        for (i = 0; i < data2.length; i++) {
+            console.log("length ======>", data1.length + i)
+
+            data3[data1.length + i] = data2[i]
+        }
+
+        var otherType = [...data1, ...data2]
+
+        console.log(data3)
+        console.log('otherType', otherType)
+
+
+
+        // other solution 
+
+
+        let n = data1.length
+        for (let i = 0; i < data2.length; i++) {
+            console.log(data1.length, "11122222", n)
+            data1[n + i] = data2[i]
+        }
+
+        console.log(data1)
+    </script>
+</head>
+
+<body>
+
+    <h1> Array Merge </h1>
+
+</body>
+
+</html>

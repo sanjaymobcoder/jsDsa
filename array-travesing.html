@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Traversing </title>
+</head>
+
+<body>
+    <script>
+        var data = [1, 5, 2, 8, 3, 7, 15, 10, 12, 11];
+
+        // for (let i = 0; i < data.length; i++) {
+        //     document.write(`Array ${i} is ${data[i]} <br>`)
+        // }
+
+
+        function getElement() {
+            let el = document.getElementById("element").value
+            if (el < data.length && typeof parseInt(el) === "number") {
+                alert(data[el])
+            } else {
+                alert("Please add valid valie")
+            }
+
+        }
+    </script>
+    <h1> Array Traversing </h1>
+
+    <input type="text" id="element" />
+    <button onclick="getElement()"> Get Element</button>
+
+</body>
+
+</html>

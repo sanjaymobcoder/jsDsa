@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> two Array Merge with while loop</title>
+
+    <script>
+        let data1 = [2, 7, 12, 34, 56, 90]
+        let data2 = [4, 9, 25, 45]
+        let result = [];
+        let d1 = 0;
+        let d2 = 0;
+        let d3 = 0;
+
+        while (d1 < data1.length && d2 < data2.length) {
+            if (data1[d1] < data2[d2]) {
+                // console.log('===========d1>', d1)
+                // console.log("data1.length ===>", data1.length)
+                result[d3] = data1[d1];
+                d1++
+
+            } else {
+                result[d3] = data2[d2];
+                d2++
+            }
+            d3++
+        }
+
+        while (d1 < data1.length) {
+            result[d3] = data1[d1];
+            d1++
+            d3++
+        }
+
+        console.log(result)
+
+
+    </script>
+</head>
+
+
+<body>
+    <h1> Array Merge with While </h1>
+</body>
+
+</html>
